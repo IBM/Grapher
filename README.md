@@ -2,7 +2,7 @@
  
 # Knowledge Graph Generation From Text
 
-[![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://arxiv.org/)
+[![Paper](https://img.shields.io/badge/Paper-ArXiv.2211.10511-blue)](https://arxiv.org/abs/2211.10511)
 [![Conference](https://img.shields.io/badge/EMNLP-2022-orange)](https://2022.emnlp.org/)
  
 <!--  
@@ -13,15 +13,15 @@ Conference
 ## Description   
 Grapher is an end-to-end multi-stage Knowledge Graph (KG) construction system, that separates the overall generation process  into  two  stages.
 <p align="center">
-  <img src="imgs/overview_grapher.png" width="30%">
+  <img src="imgs/overview_grapher.png" width="50%">
 </p>
 The  graph  nodes  are generated first using pretrained language model, such as T5.The input text is transformed into a sequence of text entities. The features corresponding to each entity (node) is extracted and then sent to the edge generation module.
 <p align="center">
-  <img src="imgs/node_gen.png" width="30%">
+  <img src="imgs/node_gen.png" width="50%">
 </p>
 Edge construction, using generation (e.g.,GRU) or a classifier head. Blue circles represent the features corresponding to the actual graph edges (solid lines) and the white circles are the features that are decoded into ⟨NO_EDGE⟩ (dashed line).
 <p align="center">
-  <img src="imgs/edges_gen.png" width="30%">
+  <img src="imgs/edges_gen.png" width="50%">
 </p>
 
 ## Environment
