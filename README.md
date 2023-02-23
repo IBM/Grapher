@@ -73,6 +73,12 @@ python main.py --run test --version 1 --default_root_dir output --data_path webn
 python main.py --run test --version 1 --default_root_dir output --data_path webnlg-dataset/release_v3.0/en --checkpoint_model_id 5000
 ```
 
+## How to run inference
+```bash
+# run inference on experiment "webnlg_version_1" using latest checkpoint last.ckpt
+python main.py --run inference --version 1 --default_root_dir output --inference_input_text "Danielle Harris had a main role in Super Capers, a 98 minute long movie."
+```
+
 ## Results
 Results can be visualized in Tensorboard
 ```bash
