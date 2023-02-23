@@ -77,7 +77,7 @@ def main(args):
 
         trainer = pl.Trainer.from_argparse_args(args,
                                                 logger=TB,
-                                                callbacks=[checkpoint_callback, RichProgressBar(0)])
+                                                callbacks=[checkpoint_callback, RichProgressBar(10)])
 
         dm.setup(stage='validate')
 
