@@ -186,7 +186,7 @@ class LitGrapher(pl.LightningModule):
     def test_step(self, batch, batch_idx):
         return self.eval_step(batch, batch_idx, 'test')
 
-    def validation_epoch_end(self, outputs):
+    def on_validation_epoch_end(self, outputs):
         self.eval_epoch_end(outputs, 'valid')
 
     def test_epoch_end(self, outputs):
